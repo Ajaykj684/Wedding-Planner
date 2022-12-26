@@ -23,7 +23,7 @@ const Item = styled(Paper)(({ theme }) => ({
 function screen1() {
   return (
     <>
-    <Grid container spacing={10} sx={{mt:6, p:8}}>
+    <Grid container spacing={10} sx={{mt:1, p:8}}>
         <Grid item xs={12}  sm={4} md={3}>
             <Item>xs=4</Item>
             <LeftDropdown/>

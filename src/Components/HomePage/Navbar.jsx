@@ -17,7 +17,7 @@ import { theme } from "./Theme";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import orange from "@mui/material/colors/orange";
-import LoginModal from '../LoginRegister/Login'
+import { useNavigate } from 'react-router-dom'
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -75,8 +75,6 @@ const pages = [
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState('paper');
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -98,15 +96,10 @@ const Navbar = () => {
     setMobileMoreAnchorEl(null);
   };
 
-  const handleClickOpen = () => {
-    console.log('lll');
-    // setOpen(true);
-    // setScroll(scrollType);
-    <LoginModal/>
-  };
-
+ 
 
   const renderMenu = () => {
+    
     return (
       <Menu
         anchorEl={anchorEl}
@@ -115,8 +108,8 @@ const Navbar = () => {
         open={isMenuOpen}
         onClose={handleMenuClose}
       >
-        <MenuItem onClick={handleClickOpen}>Login</MenuItem>
-        <MenuItem onClick={handleMenuClose}>Register</MenuItem>
+        <MenuItem><Link to="/login">Login</Link></MenuItem>
+        <MenuItem><Link to="/register">Register</Link></MenuItem>
         <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
         <MenuItem onClick={handleMenuClose}>My account</MenuItem>
       </Menu>
@@ -124,6 +117,7 @@ const Navbar = () => {
   };
 
   const renderMobileMenu = () => {
+    
     return (
       <Menu
         anchorEl={mobileMoreAnchorEl}
