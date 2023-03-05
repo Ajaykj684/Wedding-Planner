@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Navbar from '../Components/HomePage/Navbar'
 import NavbarSecond from '../Components/HomePage/NavbarSecond'
 import Wallpaper from '../Components/HomePage/wallpaper'
@@ -6,21 +6,37 @@ import Screen1 from '../Components/HomePage/screen1'
 import Footer from '../Components/HomePage/footer'
 import Scroll from '../Components/HomePage/Scroll'
 import Divider from '@mui/material/Divider';
+import LoadingSpinner from '../Components/Loader/loader'
+import Menu from '../Components/HomePage/Menu'
 
 
 
-function home() {
+function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 3000);
+    return () => clearTimeout(timer);
+  
+  }, [])
+  
   return (
     <>
-    <Navbar/>
-    <NavbarSecond/>
-    <Wallpaper/>
-    <Screen1/>
-    <Divider sx={{m:2}}/>
-    <Scroll/>
-    <Footer/>
+    {isLoading ? <LoadingSpinner /> : 
+    <>
+      <Navbar/>
+      <NavbarSecond/>
+      <Wallpaper/>
+      {/* <Menu /> */}
+      <Screen1/>
+      <Divider sx={{m:2}}/>
+      <Scroll/>
+      <Footer/>
+    </>
+  }
     </>
   )
 }
 
-export default home
+export default Home
