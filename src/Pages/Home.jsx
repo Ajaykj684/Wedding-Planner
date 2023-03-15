@@ -6,7 +6,6 @@ import Screen1 from '../Components/HomePage/screen1'
 import Footer from '../Components/HomePage/footer'
 import Scroll from '../Components/HomePage/Scroll'
 import LoadingSpinner from '../Components/Loader/loader'
-import Menu from '../Components/HomePage/Menu'
 import SearchSection from '../Components/utilities/SearchSection'
 
 

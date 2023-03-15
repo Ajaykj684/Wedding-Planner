@@ -1,81 +1,9 @@
 import React, { useState } from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import InputBase from "@mui/material/InputBase";
-import Badge from "@mui/material/Badge";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
-import { styled } from "@mui/material";
-import { theme } from "./Theme";
-import { Box } from "@mui/material";
-import { Link } from "react-router-dom";
-import rose from "@mui/material/colors/red";
 import { useNavigate } from 'react-router-dom';
-import LoginModal from '../LoginRegister/Login';
 import MenuBarComponent from './Menu'
 import { motion } from "framer-motion";
 
 
-
-const Search = styled("div")(({ theme }) => ({
-  backgroundColor: "#f3f5fb",
-  padding: "0 2px",
-  borderRadius: theme.shape.borderRadius,
-  width: "100%",
-  position: "relative",
-  "&:hover": {
-    backgroundColor: theme.palette.common.blue,
-  },
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing.unit * 3,
-    width: "auto",
-  },
-}));
-
-const styles = {
-  root: {
-    width: "100%",
-    marginBottom: "10px",
-
-  },
-  title: {
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "block",
-    },
-  },
-  tabContainer: {
-    marginLeft: "auto",
-  },
-  destopContainer: {
-    display: "none",
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
-    },
-  },
-  mobileContainer: {
-    display: "flex",
-    [theme.breakpoints.up("md")]: {
-      display: "none",
-    },
-  },
-  customColor: {
-    backgroundColor: rose[600],
-  },
-};
-
-const pages = [
-  { name: "Home", url: "/" },
-  { name: "About", url: "/about" },
-  { name: "Contact", url: "/contact" },
-];
 
 const Navbar = () => {
 
