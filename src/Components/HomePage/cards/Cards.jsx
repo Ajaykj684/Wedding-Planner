@@ -111,7 +111,7 @@ export default function ImgMediaCard() {
 
                   <footer class=" leading-none p-2 md:p-2">
                     <a
-                      class="flex items-center no-underline hover:underline text-black"
+                      class="flex items-center no-underline text-black"
                       href="#"
                     >
                       {/* <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random" /> */}
