@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "./cards/Cards";
-import Pagination from "./Pagination";
+// import Pagination from "./Pagination";
 import LeftDropdown from "./LeftDropdown";
 import LeftSideCard from "./LeftSideCard";
 import { motion } from "framer-motion";
@@ -33,7 +33,7 @@ function screen1() {
           </div>
           <div>
             <Cards />
-            <Pagination />
+            {/* <Pagination /> */}
           </div>
         </div>
       </motion.div>

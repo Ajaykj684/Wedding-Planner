@@ -1,6 +1,5 @@
 import React from "react";
 import "./scroll.css";
-import Grid from "@mui/material/Grid";
 
 function Scroll() {
   return (
