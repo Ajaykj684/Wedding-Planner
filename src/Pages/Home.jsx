@@ -5,7 +5,6 @@ import Wallpaper from '../Components/HomePage/wallpaper'
 import Screen1 from '../Components/HomePage/screen1'
 import Footer from '../Components/HomePage/footer'
 import Scroll from '../Components/HomePage/Scroll'
-import Divider from '@mui/material/Divider';
 import LoadingSpinner from '../Components/Loader/loader'
 import Menu from '../Components/HomePage/Menu'
 import SearchSection from '../Components/utilities/SearchSection'
@@ -32,7 +31,7 @@ function Home() {
       {/* <Menu /> */}
       <SearchSection />
       <Screen1/>
-      <Divider sx={{m:2}}/>
+      {/* <Divider sx={{m:2}}/> */}
       <Scroll/>
       <Footer/>
     </>
