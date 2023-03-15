@@ -26,7 +26,7 @@ function screen1() {
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
       >
-        <Grid container spacing={10} sx={{ mt: 1, p: 8 }}>
+        <Grid container spacing={10} sx={{ px: 8, pl:8, pb:8 }}>
           <Grid item xs={12} sm={4} md={3}>
             <LeftDropdown />
             <LeftSideCard

@@ -8,6 +8,7 @@ import Scroll from '../Components/HomePage/Scroll'
 import Divider from '@mui/material/Divider';
 import LoadingSpinner from '../Components/Loader/loader'
 import Menu from '../Components/HomePage/Menu'
+import SearchSection from '../Components/utilities/SearchSection'
 
 
 
@@ -29,6 +30,7 @@ function Home() {
       <NavbarSecond/>
       <Wallpaper/>
       {/* <Menu /> */}
+      <SearchSection />
       <Screen1/>
       <Divider sx={{m:2}}/>
       <Scroll/>

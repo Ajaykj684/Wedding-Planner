@@ -24,7 +24,7 @@ export default () => {
 
       {
           href: 'javascript:void()',
-          name: 'Suuport'
+          name: 'Support'
       }
   ]
 

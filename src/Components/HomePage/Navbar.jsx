@@ -153,8 +153,8 @@ const Navbar = () => {
           />
         </svg>
       </button>
-      <div className="text-lg font-semibold	text-white font-serif md:ml-16">
-          <a>Wedding Planner</a>
+      <div className="text-lg font-semibold	text-white font-serif md:ml-16 cursor-pointer">
+          <a onClick={()=>navigate('/')}>Wedding Planner</a>
       </div>
     </div>
 
@@ -165,28 +165,28 @@ const Navbar = () => {
       >
         <a
           href="/about"
-          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-black hover:text-black"
+          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-gray-900 hover:text-gray-900"
         >
           About
         </a>
 
         <a
           href="/news"
-          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-black hover:text-black"
+          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-gray-900 hover:text-gray-900"
         >
           News
         </a>
 
         <a
           href="/products"
-          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-black hover:text-black"
+          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-gray-900 hover:text-gray-900"
         >
           Products
         </a>
 
         <a
           href="/contact"
-          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-black hover:text-black"
+          class="block h-16 text-white border-b-4 border-transparent leading-[4rem] hover:border-gray-900 hover:text-gray-900"
         >
           Contact
         </a>
@@ -199,7 +199,7 @@ const Navbar = () => {
           <span>
             <a
               href="/cart"
-              class="block border-b-4 border-transparent p-6 hover:border-black"
+              class="block border-b-4 border-transparent p-6 hover:border-gray-900"
             >
               <svg
                 class="h-4 w-4"
@@ -223,7 +223,7 @@ const Navbar = () => {
           <span>
             <a
               href="/account"
-              class="block border-b-4 border-transparent p-6 hover:border-black"
+              class="block border-b-4 border-transparent p-6 hover:border-gray-900"
             >
               <svg
                 class="h-4 w-4"
@@ -248,7 +248,7 @@ const Navbar = () => {
           <span class="hidden sm:block">
             <a
               href="/search"
-              class="block border-b-4 border-transparent p-6 hover:border-black"
+              class="block border-b-4 border-transparent p-6 hover:border-gray-900"
             >
               <svg
                 class="h-4 w-4"
