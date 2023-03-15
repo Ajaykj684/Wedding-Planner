@@ -1,6 +1,4 @@
 import * as React from "react";
-import { experimentalStyled as styled } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
